@@ -1,8 +1,4 @@
 # Databricks-Cost-Monitoring-Queries
-This is the place where you can find the databricks cost monitoring queries for serverless capabilities
-# Databricks-Cost-Monitoring-Queries
-
-
 
 ## 📝 Description
 
@@ -12,13 +8,14 @@ Optimize your Databricks serverless deployments with our comprehensive cost moni
 
 ```
 .
-├── databricks-apps.sql
-├── foundation-model-endpoints.sql
-├── model-serving-endpoints.sql
-├── model-token-usage.sql
-├── sql-warehouse.sql
-└── vector-search.sql
+├── databricks-apps.sql => to track the databricks apps cost usage
+├── foundation-model-endpoints.sql => to check the accumulated cost for the foundational models
+├── model-serving-endpoints.sql => other model endpoint serving costs
+├── model-token-usage.sql => gives the count of tokens i/o used 
+├── sql-warehouse.sql => accumulated cost for the sql warehouse computes
+└── vector-search.sql => accumulated cost for the vector search
 ```
+*Note: Few calculations mentioned here are based on the date price which was available in databricks, it might be subject to change on days. please check the queries in your workspace and deploy it to production if its working still.
 
 ## 👥 Contributing
 
